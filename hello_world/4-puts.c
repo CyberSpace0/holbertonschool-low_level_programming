@@ -3,6 +3,6 @@
 int main() 
 {
     putchar('"');
-    fputs("Programming is like building a multilingual puzzle", stdout);
+    puts("Programming is like building a multilingual puzzle");
     return 0;
 }
