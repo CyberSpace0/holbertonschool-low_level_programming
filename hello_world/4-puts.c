@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-int main() 
+/*
+* Main function
+*/
+int main()
 {
     putchar('"');
     puts("Programming is like building a multilingual puzzle");
