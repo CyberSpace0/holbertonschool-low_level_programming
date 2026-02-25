@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _abs - entry point
+* print_last_digit - entry point
 * * @c: the character to check
 * Return: always (0) success
 */
