@@ -7,9 +7,9 @@
 void times_table(void)
 {
 int table,column,result;
-for (table = 0; table < 10;table++)
+for (table = 0; table < 10; table++)
 {
-for (column = 0; column < 10;column++)
+for (column = 0; column < 10; column++)
 {
 result = table * column;
 if (column == 0)
