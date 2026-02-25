@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_last_digit - entry point
+* jack_bauer - entry point
 * * @c: the character to check
 * Return: always (0) success
 */
@@ -10,7 +10,7 @@ void jack_bauer(void)
 int hour, min;
 for (hour = 0; hour < 24; hour++)
 {
-for (min= 0; min < 60; min++)
+for (min = 0; min < 60; min++)
 {
 _putchar((hour / 10) + '0');
 _putchar((hour % 10) + '0');
