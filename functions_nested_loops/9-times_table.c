@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* jack_bauer - entry point
+* times_table - entry point
 * Return: always (0) success
 */
 void times_table(void)
