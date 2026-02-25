@@ -13,10 +13,10 @@ for (i = 0; i < 26; i++)
 {
 if (c == lower[i])
 {
-return 1;
+return (1);
 }
 
 }
-return 0;
+return (0);
 
 }
