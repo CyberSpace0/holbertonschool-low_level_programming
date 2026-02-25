@@ -2,7 +2,6 @@
 
 /**
 * jack_bauer - entry point
-* * @c: the character to check
 * Return: always (0) success
 */
 void jack_bauer(void)
