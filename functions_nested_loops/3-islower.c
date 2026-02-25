@@ -2,6 +2,7 @@
 
 /**
 * _islower - entry point
+* int c is input value from user
 * Return: always (0) success
 */
 int _islower(int c)
