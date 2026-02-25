@@ -19,6 +19,6 @@ return _putchar(val);
 }
 
 }
-
+return 0;
 
 }
