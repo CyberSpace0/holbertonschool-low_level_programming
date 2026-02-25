@@ -15,7 +15,7 @@ for (i = 0; i < 26; i++)
 if (c == lower[i])
 {
 val = (c == lower[i]);
-return _putchar(val);
+return 1;
 }
 
 }
