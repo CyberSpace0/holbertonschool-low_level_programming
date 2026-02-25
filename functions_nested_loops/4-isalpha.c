@@ -7,10 +7,10 @@
 */
 int _isalpha(int c)
 {
-char lower[] = "qwertyuioplkjhgfdsazxcvbnm";
+char lower[] = "qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM";
 int i;
 
-for (i = 0; i < 26; i++)
+for (i = 0; i < 52; i++)
 {
 if (c == lower[i])
 {
