@@ -41,9 +41,9 @@ printf(",");
 }
 }
 
-else if(i == 98)
+else if (i == 98)
 {
-printf(" %i",i);
+printf(" %i", i);
 }
 
 else
