@@ -2,15 +2,15 @@
 
 /**
 * add - entry point
-* @c: int value
+* @n: int value
 * Return: always (0) success
 */
 void print_to_98(int n)
 {
 int i;
-for (i = c; i <= 98; i++)
+for (i = n; i <= 98; i++)
 {
-if (i == c)
+if (i == n)
 {
 printf("%i,",i);
 }
