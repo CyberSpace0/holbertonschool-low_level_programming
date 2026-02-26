@@ -34,7 +34,7 @@ void first(int i, int n)
 {
 if (i == n)
 {
-printf(" %i",i);
+printf("%i",i);
 }
 
 else if(i == 98)
