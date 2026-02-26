@@ -13,14 +13,14 @@ int i;
 
 if (n <= 98)
 {
-for (i = n;i <= 98;i++)
+for (i = n; i <= 98; i++)
 {
 first(i, n);
 }
 }
 else
 {
-for (i = n;i >= 98;i--)
+for (i = n; i >= 98; i--)
 {
 first(i, n);
 }
@@ -34,7 +34,7 @@ void first(int i, int n)
 {
 if (i == n)
 {
-printf("%i",i);
+printf("%i", i);
 if (i != 98)
 {
 printf(",");
@@ -48,6 +48,6 @@ printf(" %i",i);
 
 else
 {
-printf(" %i,",i);
+printf(" %i,", i);
 }
 }
