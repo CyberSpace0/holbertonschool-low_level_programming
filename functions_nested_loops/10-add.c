@@ -2,7 +2,8 @@
 
 /**
 * add - entry point
-* * @c: the character to check
+* @a: the character to check
+* @b: int value
 * Return: always (0) success
 */
 int add(int a, int b)
