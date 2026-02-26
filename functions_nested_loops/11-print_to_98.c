@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* add - entry point
-* first- second functin to print
+* print_to_98 - entry point
+* first - second functin to print
 * @n: int value
 * @i: int value
 * Return: always (0) success
