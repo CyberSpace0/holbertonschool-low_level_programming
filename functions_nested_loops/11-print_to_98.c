@@ -1,11 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 
-/**
- * first - prints a number with correct formatting
- * @i: current number
- * @n: starting number
- */
 void first(int i, int n);
 
 /**
@@ -35,6 +30,11 @@ printf("\n");
 
 }
 
+/**
+ * first - prints a number with correct formatting
+ * @i: current number
+ * @n: starting number
+ */
 void first(int i, int n)
 {
 if (i == n)
