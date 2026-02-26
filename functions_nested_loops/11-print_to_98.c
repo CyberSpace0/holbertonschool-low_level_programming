@@ -2,7 +2,9 @@
 #include <stdio.h>
 /**
 * add - entry point
+* first- second functin to print
 * @n: int value
+* @i: int value
 * Return: always (0) success
 */
 void first(int i, int n);
