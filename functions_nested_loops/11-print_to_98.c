@@ -32,9 +32,13 @@ printf("\n");
 
 void first(int i, int n)
 {
-if (i == n && n > 98)
+if (i == n)
 {
-printf("%i,",i);
+printf("%i",i);
+if (i != 98)
+{
+printf(",");
+}
 }
 
 else if(i == 98)
