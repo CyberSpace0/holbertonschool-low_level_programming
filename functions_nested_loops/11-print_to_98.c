@@ -23,7 +23,7 @@ else
 printf(" %i,",i);
 }
 
-}// end of loop
+}
 printf("\n");
 
 }
