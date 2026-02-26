@@ -12,7 +12,7 @@ for (i = n; i <= 98; i++)
 {
 if (i == 98)
 {
-printf(" %i",i);
+printf("%i",i);
 }
 else if(i == n)
 {
