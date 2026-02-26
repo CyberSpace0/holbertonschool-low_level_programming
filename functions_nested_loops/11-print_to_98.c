@@ -1,15 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* print_to_98 - entry point
-* @n: int value
 * first - second functin to print
-* @n: int value
 * @i: int value
-* Return: always (0) success
+* @n: int value
 */
 void first(int i, int n);
 
+/**
+ * print_to_98 - prints all natural numbers from n to 98
+ * @n: starting number
+ */
 void print_to_98(int n)
 {
 int i;
