@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
 * print_to_98 - entry point
+* @n: int value
 * first - second functin to print
 * @n: int value
 * @i: int value
