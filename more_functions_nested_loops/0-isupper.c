@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 /**
 * _isupper - Entry functino
 *@c int value
@@ -6,5 +7,5 @@
 */
 int _isupper(int c)
 {
-return (_isupper(c));
+return (isupper(c));
 }
