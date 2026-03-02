@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* print_numbers - Entry functino
+* print_most_numbers - Entry functino
 * Return: always (0) Success
 */
 void print_most_numbers(void)
