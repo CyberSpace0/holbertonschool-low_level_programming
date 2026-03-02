@@ -27,7 +27,6 @@ printf("%i ", i);
 
 
 }
-}
 printf("%s", "Buzz");
 putchar('\n');
 return (0);
