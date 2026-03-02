@@ -4,7 +4,7 @@
 *@c int value
 * Return: always (0) Success
 */
-int main(char c)
+int _isupper(int c)
 {
 return (isupper(c));
 }
