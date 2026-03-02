@@ -2,7 +2,8 @@
 #include <ctype.h>
 /**
 * _isdigit - Entry functino
-* @c:   int value
+* @a:   int value
+* @b:   int value
 * Return: always (0) Success
 */
 int mul(int a, int b)
