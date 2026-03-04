@@ -17,9 +17,13 @@ len++;
 }
 while (len >= 0)
 {
+if (str - i != '\0')
+{
 _putchar(*(str - i));
 len = len - 1;
 i++;
+
+}
 }
 
 }
