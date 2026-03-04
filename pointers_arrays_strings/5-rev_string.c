@@ -1,21 +1,30 @@
 #include <stdio.h>
 #include <string.h>
-#include "main.h"
 
 /**
- * print_rev - Entry function
- * @str: char value from pointer
+ * rev_string - Entry function
+ * @sa: char value from pointer
  * Return: always int value
  */
+
 void rev_string(char *s)
 {
 int len = 0;
-int i;
+char ki[100];
+int i,x;
 while (s[len] != '\0')
-len++;
-for (i = len - 1; i >= 0; i--)
 {
-_putchar(s[i]);
+len++;
 }
-_putchar('\n');
+for (i = 0; i < len; i++)
+{
+
+ki[i] = s[len - 1 - i]; 
+}
+
+for (x = 0; x < len; x++)
+{
+*(s + x) = ki[x];
+}
+
 }
