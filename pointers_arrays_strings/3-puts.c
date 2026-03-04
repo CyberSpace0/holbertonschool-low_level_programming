@@ -9,7 +9,10 @@
  */
 void _puts(char *str)
 {
+if (*str != '\0')
+{
 _putchar(*str);
+}
 while (*str++)
 {
 if (*str != '\0')
