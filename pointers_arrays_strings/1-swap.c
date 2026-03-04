@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * reset_to_98 - Entry function
+ * swap_int - Entry function
  * @a: int value from pointer
  * @b: int value from pointer
  * Return: always int value
