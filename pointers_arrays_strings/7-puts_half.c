@@ -20,7 +20,7 @@ len++;
 switch (len % 2)
 {
 case 1:
-    r = (len - 3) / 2;
+    r = (len - 1) / 2;
     break;
 
 default:
