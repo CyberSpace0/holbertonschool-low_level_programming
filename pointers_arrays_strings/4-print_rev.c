@@ -15,7 +15,7 @@ while (*str++)
 {
 len++;
 }
-while (len > 0)
+while (len >= 0)
 {
 _putchar(*(str - i));
 len = len - 1;
