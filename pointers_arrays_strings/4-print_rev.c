@@ -10,20 +10,11 @@
 void print_rev(char *str)
 {
 int len = 0;
-int i = 1;
-while (*str++)
+while (str[len] != '\0')
+    len++;
+for (int i = len - 1; i >= 0; i--)
 {
-len++;
-}
-while (len >= 0)
-{
-if (*str - i != '\0')
-{
-_putchar(*(str - i));
-len = len - 1;
-i++;
-
-}
+    _putchar(str[i]);
 }
 _putchar('\n');
 }
