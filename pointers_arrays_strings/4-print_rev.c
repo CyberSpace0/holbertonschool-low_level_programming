@@ -10,15 +10,16 @@
 void print_rev(char *str)
 {
 int len = 0;
-_putchar(*str);
+int i = 1;
 while (*str++)
 {
 len++;
 }
 while (len > 0)
 {
-_putchar(*(str - len));
+_putchar(*(str - i));
 len = len - 1;
+i++;
 }
 
 }
