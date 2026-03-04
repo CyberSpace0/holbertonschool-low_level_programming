@@ -6,7 +6,9 @@
  * @n: int value from pointer
  * Return: always int value
  */
-void reset_to_98(int *n)
+void swap_int(int *a, int *b)
 {
-*n = 98;
+int x = *a;
+*a = *b;
+*b = x;
 }
