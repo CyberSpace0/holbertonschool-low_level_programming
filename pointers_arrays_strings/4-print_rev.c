@@ -21,6 +21,5 @@ while (len > 0)
 putchar(*(str - len));
 len = len - 1;
 }
-//printf("%s" , *str);
 
 }
