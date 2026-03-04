@@ -11,7 +11,7 @@ void rev_string(char *s)
 {
 int len = 0;
 char ki[1000];
-int i,x;
+int i, x;
 while (s[len] != '\0')
 {
 len++;
@@ -19,7 +19,7 @@ len++;
 for (i = 0; i < len; i++)
 {
 
-ki[i] = s[len - 1 - i]; 
+ki[i] = s[len - 1 - i];
 }
 
 for (x = 0; x < len; x++)
