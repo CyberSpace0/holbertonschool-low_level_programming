@@ -12,17 +12,27 @@ void puts_half(char *str)
 {
 int len = 0;
 char ki[1000];
-int i, x;
+int i, x, j,r;
 while (str[len] != '\0')
 {
 len++;
 }
-for (i = len / 2; i < len; i = i + 1)
+switch (len % 2)
+{
+case 1:
+    r = len - 1 / 2;
+    break;
+
+default:
+    r = len / 2;
+    break;
+}
+for (i = r; i < len; i = i + 1)
 {
 ki[i] = str[i];
 }
 
-for (x = len / 2; x < len; x = x + 1)
+for (x = r; x < len; x = x + 1)
 {
 _putchar(ki[x]);
 }
