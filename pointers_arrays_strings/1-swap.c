@@ -3,7 +3,8 @@
 
 /**
  * reset_to_98 - Entry function
- * @n: int value from pointer
+ * @a: int value from pointer
+ * @b: int value from pointer
  * Return: always int value
  */
 void swap_int(int *a, int *b)
