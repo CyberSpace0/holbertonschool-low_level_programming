@@ -3,7 +3,7 @@
 
 /**
  * rev_string - Entry function
- * @sa: char value from pointer
+ * @s: char value from pointer
  * Return: always int value
  */
 
