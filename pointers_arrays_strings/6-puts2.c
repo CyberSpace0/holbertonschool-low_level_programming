@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * print_rev - Entry function
+ * puts2 - Entry function
  * @str: char value from pointer
  * Return: always int value
  */
@@ -12,7 +12,7 @@ void puts2(char *str)
 {
 int len = 0;
 char ki[1000];
-int i,x;
+int i, x;
 while (str[len] != '\0')
 {
 len++;
