@@ -22,7 +22,7 @@ for (i = len / 2; i < len; i = i + 1)
 ki[i] = str[i];
 }
 
-for (x = 0; x < len; x = x + 2)
+for (x = len / 2; x < len; x = x + 1)
 {
 _putchar(ki[x]);
 }
