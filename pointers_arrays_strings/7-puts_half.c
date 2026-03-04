@@ -20,12 +20,12 @@ len++;
 switch (len % 2)
 {
 case 1:
-    r = (len + 1) / 2;
-    break;
+r = (len + 1) / 2;
+break;
 
 default:
-    r = len / 2;
-    break;
+r = len / 2;
+break;
 }
 for (i = r; i < len; i = i + 1)
 {
