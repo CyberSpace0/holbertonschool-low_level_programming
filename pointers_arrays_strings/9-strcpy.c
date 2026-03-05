@@ -34,7 +34,7 @@ for (x = 0; x <= len; x = x + 1)
 }
 else
 {
-return (src);
+return ('\0');
 }
 
 return (dest);
