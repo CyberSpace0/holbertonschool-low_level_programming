@@ -21,12 +21,12 @@ len++;
 
 if (len > 0)
 {
-for (i = 0; i < len; i = i + 1)
+for (i = 0; i <= len; i = i + 1)
 {
 ki[i] = src[i];
 }
 
-for (x = 0; x < len; x = x + 1)
+for (x = 0; x <= len; x = x + 1)
 {
 *(dest + x) = ki[x];
 }
