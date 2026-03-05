@@ -14,38 +14,20 @@ char *_strcpy(char *dest, char *src)
 int len = 0;
 char ki[1000];
 int i,x;
-do
+while (src[len] != '\0')
 {
 len++;
-} while (src[len] != '\0');
+}
 
 for (i = 0; i <= len; i = i + 1)
-{
-
-if (len == 1)
-{
-ki[0] = src[0];
-}
-else
 {
 ki[i] = src[i];
 }
 
-}
-
 for (x = 0; x <= len; x = x + 1)
-{
-if (len == 1)
-{
-*(dest + x) = ki[0];
-}
-else
 {
 *(dest + x) = ki[x];
 }
-
-}
-
 
 return (dest);
 
