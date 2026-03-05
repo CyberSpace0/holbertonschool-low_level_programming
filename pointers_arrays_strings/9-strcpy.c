@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * puts_half - Entry function
+ * _strcpy - Entry function
  * @dest: char value from pointer
  * @src: char value
  * Return: always int value
@@ -13,7 +13,7 @@ char *_strcpy(char *dest, char *src)
 {
 int len = 0;
 char ki[1000];
-int i,x;
+int i, x;
 while (src[len] != '\0')
 {
 len++;
