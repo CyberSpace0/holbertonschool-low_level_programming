@@ -19,6 +19,8 @@ do
 len++;
 } while (src[len] != '\0');
 
+if (len > 0)
+{
 for (i = 0; i < len; i = i + 1)
 {
 ki[i] = src[i];
@@ -27,6 +29,12 @@ ki[i] = src[i];
 for (x = 0; x < len; x = x + 1)
 {
 *(dest + x) = ki[x];
+}
+
+}
+else
+{
+return (src);
 }
 
 return (dest);
