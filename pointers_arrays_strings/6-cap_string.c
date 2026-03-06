@@ -19,7 +19,7 @@ while (s[i] != '\0')
 {
 if (s[i] >= 'a' && s[i] <= 'z')
 {
-if (exceptions(s[i-1]))
+if (exceptions(s[i - 1]))
 {
 s[i] = s[i] - 32;
 }
@@ -37,10 +37,10 @@ return (s);
 int exceptions(char k)
 {
 int i = 0;
-char sep[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+char p[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 while (i < 13)
 {
-if (k == sep[i])
+if (k == p[i])
 {
 return (1);
 }
