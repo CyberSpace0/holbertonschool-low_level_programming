@@ -10,7 +10,6 @@
 int _strcmp(char *s1, char *s2)
 {
 int first, second = 0;
-int i = 0;
 while (s1[first] != '\0')
 {
 first++;
