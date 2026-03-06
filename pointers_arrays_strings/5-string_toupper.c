@@ -3,7 +3,7 @@
 
 /**
  * string_toupper - concatenate two strings
- * @: destination string
+ * @s: destination string
  * Return: pointer to dest
  */
 char *string_toupper(char *s)
