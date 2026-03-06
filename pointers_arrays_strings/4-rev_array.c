@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _strcmp - concatenate two strings
+ * reverse_array - concatenate two strings
  * @a: destination string
  * @n: source string
  * Return: pointer to dest
