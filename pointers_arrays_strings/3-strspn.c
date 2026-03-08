@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 int i = 0;
 int x = 0;
 int result = 0;
-char state = "false";
+char state[] = "false";
 while (s[x] != '\0')
 {
 while (accept[i] != '\0')
