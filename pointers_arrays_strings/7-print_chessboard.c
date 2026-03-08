@@ -2,9 +2,8 @@
 #include "main.h"
 
 /**
- * _strstr - Entry function
- * @haystack: int value from pointer
- * @needle: char
+ * print_chessboard - Entry function
+ * @a: int value from pointer
  * Return: always int value
  */
 void print_chessboard(char (*a)[8])
