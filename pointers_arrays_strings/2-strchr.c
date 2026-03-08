@@ -15,18 +15,10 @@ while ((s[i] != '\0'))
 {
 if (s[i] == c)
 {
-for (x = 0; x < i; x++)
-{
-s++;
-}
-return (s);
+return (&s[i]);
 }
 i++;
 };
-if (c == '\0')
-{
-return (*s[i]);
-}
 
 return (NULL);
 }
