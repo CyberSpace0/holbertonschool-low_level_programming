@@ -11,7 +11,7 @@ char *_strchr(char *s, char c)
 {
 int i = 0;
 int x = 0;
-while (s[i] != '\0')
+do
 {
 if (s[i] == c)
 {
@@ -22,7 +22,7 @@ s++;
 return (s);
 }
 i++;
-}
+}while ((s[i] != '\0'))
 
 return (NULL);
 }
