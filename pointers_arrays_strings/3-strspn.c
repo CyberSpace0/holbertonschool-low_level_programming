@@ -12,28 +12,27 @@ unsigned int _strspn(char *s, char *accept)
 int i = 0;
 int x = 0;
 int result = 0;
-bool state = false;
+char state = "false";
 while (s[x] != '\0')
 {
 while (accept[i] != '\0')
 {
 if (accept[i] == s[x])
 {
-state = true;
+state = "true";
 result++;
 break;
 }
 else if(accept[i + 1] == '\0')
 {
-state = false;
+state = "false";
 }
 i++;
 }
 x++;
 }
-if (state != true)
+if (state != "true")
 {
 break;
 }
-
 }
