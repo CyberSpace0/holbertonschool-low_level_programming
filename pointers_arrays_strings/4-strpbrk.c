@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _strchr - Entry function
+ * _strpbrk - Entry function
  * @s: int value from pointer
  * @accept: char
  * Return: always int value
