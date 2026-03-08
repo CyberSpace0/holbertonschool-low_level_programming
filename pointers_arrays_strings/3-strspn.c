@@ -24,7 +24,7 @@ state = 't';
 result++;
 break;
 }
-else if(accept[i + 1] == '\0')
+else if (accept[i + 1] == '\0')
 {
 state = 'f';
 }
