@@ -22,7 +22,7 @@ s++;
 return (s);
 }
 i++;
-}while ((s[i] != '\0'))
+}while ((s[i] != '\0'));
 
 return (NULL);
 }
