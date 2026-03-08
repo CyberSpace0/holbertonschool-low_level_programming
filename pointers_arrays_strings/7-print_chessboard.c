@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * _strstr - Entry function
+ * @haystack: int value from pointer
+ * @needle: char
+ * Return: always int value
+ */
+void print_chessboard(char (*a)[8])
+{
+int i,x;
+for (i = 0;i < 8;i++)
+{
+for (x = 0;x < 8;x++)
+{
+_putchar(a[i][x]);
+}
+_putchar('\n');
+}
+}
