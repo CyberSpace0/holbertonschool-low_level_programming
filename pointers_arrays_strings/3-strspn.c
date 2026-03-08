@@ -19,13 +19,13 @@ while (accept[i] != '\0')
 {
 if (accept[i] == s[x])
 {
-state = "true";
+state[] = "true";
 result++;
 break;
 }
 else if(accept[i + 1] == '\0')
 {
-state = "false";
+state[] = "false";
 }
 i++;
 }
