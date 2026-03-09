@@ -21,6 +21,11 @@ return (-1);
 
 }
 
+/**
+ * ssqrt - secondary entrpoint
+ * @n: int value
+ * @x: int value
+ */
 int ssqrt(int n,int x)
 {
 int r = x * x;
