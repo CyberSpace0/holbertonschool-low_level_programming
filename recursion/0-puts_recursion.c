@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * _strcat - concatenate two strings
- * @dest: destination string
- * @src: source string
+ * _puts_recursion - concatenate two strings
+ * @s: destination string
  * Return: pointer to dest
  */
 void _puts_recursion(char *s)
