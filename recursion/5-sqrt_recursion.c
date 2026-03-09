@@ -10,7 +10,14 @@ int ssqrt(int i,int x);
 int _sqrt_recursion(int n)
 {
 int i = 1;
+if (n > 0)
+{
 return (ssqrt(n, i));
+}
+else
+{
+return (-1);
+}
 
 }
 
