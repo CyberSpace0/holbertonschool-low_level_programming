@@ -3,7 +3,7 @@
 int ssqrt(int i, int x);
 
 /**
- * _sqrt_recursion - concatenate two strings
+ * is_prime_number - concatenate two strings
  * @n: destination string
  * Return: pointer to dest
  */
