@@ -6,10 +6,12 @@
 * @argv: char
 * Return: always (0) success
 */
-int main(int argc)
+int main(int argc, char *argv[])
 {
-
+if (argv[0])
+{
 printf("%i\n", argc);
+}
 
 return (0);
 }
