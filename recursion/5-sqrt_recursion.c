@@ -1,6 +1,6 @@
 #include "main.h"
 
-int ssqrt(int i,int x);
+int ssqrt(int i, int x);
 
 /**
  * _sqrt_recursion - concatenate two strings
@@ -26,7 +26,7 @@ return (-1);
  * @n: int value
  * @x: int value
  */
-int ssqrt(int n,int x)
+int ssqrt(int n, int x)
 {
 int r = x * x;
 if (x >= 1)
@@ -38,7 +38,7 @@ return (x);
 }
 else
 {
-return ssqrt(n, x + 1);
+return (ssqrt(n, x + 1));
 }
 
 }
