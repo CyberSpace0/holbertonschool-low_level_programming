@@ -25,6 +25,7 @@ return (-1);
  * ssqrt - secondary entrpoint
  * @n: int value
  * @x: int value
+ * Return: always int
  */
 int ssqrt(int n, int x)
 {
