@@ -34,7 +34,7 @@ return (0);
 }
 else
 {
-return (ssqrt(n, x + 1) );
+return (ssqrt(n, x + 1));
 }
 }
 else
