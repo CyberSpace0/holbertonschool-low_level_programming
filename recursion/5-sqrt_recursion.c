@@ -16,7 +16,7 @@ return (ssqrt(n, n));
 int ssqrt(int n,int x)
 {
 int r = x * x;
-if (x > 1)
+if (x >= 1)
 {
 
 if (r == n)
