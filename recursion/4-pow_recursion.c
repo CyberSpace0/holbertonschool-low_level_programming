@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * factorial - concatenate two strings
- * @n: destination string
+ * _pow_recursion - concatenate two strings
+ * @x: destination string
+ * @y: int value
  * Return: pointer to dest
  */
 int _pow_recursion(int x, int y)
