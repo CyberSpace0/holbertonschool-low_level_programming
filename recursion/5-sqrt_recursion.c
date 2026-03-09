@@ -9,7 +9,8 @@ int ssqrt(int i,int x);
  */
 int _sqrt_recursion(int n)
 {
-return (ssqrt(n, n));
+int i = 1;
+return (ssqrt(n, i));
 
 }
 
@@ -25,7 +26,7 @@ return (x);
 }
 else
 {
-return ssqrt(n, x - 1);
+return ssqrt(n, x + 1);
 }
 
 }
