@@ -6,9 +6,8 @@
 unsigned int _strlen(char *str);
 
 /**
-* create_array - entry point
-* @c: length
-* @size: char
+* _strdup - entry point
+* @str: length
 * Return: always (0) success
 */
 char *_strdup(char *str)
