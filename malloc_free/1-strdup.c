@@ -36,7 +36,6 @@ return (arr);
 /**
  * _strlen - returns the length of a string
  * @str: string to measure
- *
  * Return: length of the string
  */
 unsigned int _strlen(char *str)
