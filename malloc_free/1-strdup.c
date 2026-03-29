@@ -20,12 +20,12 @@ if (str == NULL)
 {
 return (NULL);
 }
-arr = malloc(_strlen(str) * sizeof(char));
+arr = malloc((_strlen(str) + 1) * sizeof(char));
 if (arr == NULL)
 {
 return (NULL);
 }
-for (i = 0; i <= _strlen(str); i++)
+for (i = 0; i < _strlen(str) + 1; i++)
 {
 arr[i] = str[i];
 }
