@@ -25,7 +25,7 @@ if (arr == NULL)
 {
 return (NULL);
 }
-for (i = 0; i < _strlen(str); i++)
+for (i = 0; i <= _strlen(str); i++)
 {
 arr[i] = str[i];
 }
