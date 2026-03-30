@@ -13,13 +13,18 @@ char *str_concat(char *s1, char *s2)
 char *arr;
 int i;
 int l1,l2,s;
+if ( s1 != NULL){
 for (l1 = 0; s1[l1] != '\0';l1++)
 {
 
 }
+}
+if (s2 != NULL)
+{
 for (l2 = 0; s2[l2] != '\0';l2++)
 {
 
+}
 }
 
 
@@ -40,7 +45,7 @@ for (s = 0; s < l2; s++)
 {
 arr[i + s] = s2[s];
 }
-
+arr[i + s + 1] = '\0';
 return (arr);
 
 }
