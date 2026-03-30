@@ -4,19 +4,19 @@
 
 
 /**
-* str_concat - entry point
-* @s1: length
-* @s2: length
+* alloc_grid - entry point
+* @width: length
+* @height: length
 * Return: always (0) success
 */
 int **alloc_grid(int width, int height)
 {
+int** r;
+int i,x = 0;
 if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-int** r;
-int i,x = 0;
 r = malloc(sizeof(int *) * height);
 if (r == NULL)
 {
