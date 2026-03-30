@@ -27,6 +27,11 @@ for (i = 0; i < height; i++)
 r[i] = malloc(sizeof(int) * width);
 if (r[i] == NULL)
 {
+while (i--)
+{
+free(r[i]);
+}
+free(r);
 return (NULL);
 }
 for (x = 0; x < width; x++)
