@@ -3,14 +3,15 @@
 #include <stdlib.h>
 
 /**
-* _strdup - entry point
-* @str: length
+* str_concat - entry point
+* @s1: length
+* @s2: lneee
 * Return: always (0) success
 */
 char *str_concat(char *s1, char *s2)
 {
 char *arr;
-unsigned int i;
+int i;
 int l1,l2,s;
 for (l1 = 0; s1[l1] != '\0';l1++)
 {
