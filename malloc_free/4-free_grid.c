@@ -4,8 +4,8 @@
 
 
 /**
-* alloc_grid - entry point
-* @width: length
+* free_grid - entry point
+* @grid: length
 * @height: length
 * Return: always (0) success
 */
