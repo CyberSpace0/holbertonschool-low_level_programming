@@ -17,7 +17,7 @@ if (s1 == NULL)
 {
 s1 = "";
 }
-else if (s2 == NULL)
+if (s2 == NULL)
 {
 s2 = "";
 }
@@ -44,7 +44,7 @@ for (s = 0; s < l2; s++)
 {
 arr[i + s] = s2[s];
 }
-arr[l1 + l2] = '\0';
+arr[l1 + l2] = '\0';    
 return (arr);
 
 }
