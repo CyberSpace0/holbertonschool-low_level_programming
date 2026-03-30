@@ -36,10 +36,9 @@ for (i = 0; i < l1; i++)
 {
 arr[i] = s1[i];
 }
-arr[i+1] = ' ';
 for (s = 0; s < l2; s++)
 {
-arr[i + 2 + s] = s2[s];
+arr[i + s] = s2[s];
 }
 
 return (arr);
