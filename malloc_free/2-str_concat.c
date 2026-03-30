@@ -31,10 +31,6 @@ for (l2 = 0; s2[l2] != '\0';l2++)
 }
 
 
-if (s1 == NULL && s2 == NULL)
-{
-return ('\0');
-}
 arr = malloc((l1 + l2 + 1) * sizeof(char));
 if (arr == NULL)
 {
@@ -48,7 +44,7 @@ for (s = 0; s < l2; s++)
 {
 arr[i + s] = s2[s];
 }
-
+arr[l1 + l2] = '\0';
 return (arr);
 
 }
