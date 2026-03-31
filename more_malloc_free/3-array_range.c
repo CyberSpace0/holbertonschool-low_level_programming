@@ -4,9 +4,9 @@
 
 
 /**
-* _calloc - entry point
-* @nmemb: length
-* @size: length
+* array_range - entry point
+* @min: length
+* @max: length
 * Return: always (0) success
 */
 int *array_range(int min, int max)
@@ -14,11 +14,16 @@ int *array_range(int min, int max)
 int* arr;
 int i;
 int x = 0;
+int total = max - min;
 if (min > max)
 {
 return (NULL);
 }
-arr = malloc((max - min) * sizeof(int));
+if (total == 0)
+{
+total = 1;
+}
+arr = malloc(total * sizeof(int));
 if (arr == NULL)
 {
 return (NULL);
