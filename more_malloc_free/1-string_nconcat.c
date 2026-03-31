@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-unsigned int _strlen(char *str);
-
 /**
 * malloc_checked - entry point
 * @b: length
