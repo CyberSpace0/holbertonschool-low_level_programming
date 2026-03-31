@@ -41,7 +41,7 @@ return (ptr);
  * @str: string to measure
  * Return: length of the string
  */
-unsigned int _strlen(char *str)
+int _strlen(char *str)
 {
 unsigned int len = 0;
 while (str[len] != '\0')
