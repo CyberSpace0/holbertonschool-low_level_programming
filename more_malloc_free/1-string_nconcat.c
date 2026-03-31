@@ -40,6 +40,7 @@ for (x = 0; x < n; x++)
 {
 ptr[i + x] = s2[x];
 }
+ptr[i + x] = '\0';
 return (ptr);
 }
 
