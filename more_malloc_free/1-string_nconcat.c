@@ -16,7 +16,7 @@ if (s1 == NULL || s2 == NULL)
 {
 return ('\0');
 }
-ptr = malloc((_strlen(s1) + n), sizeof(char));
+ptr = malloc((_strlen(s1) + n) * sizeof(char));
 if (ptr == NULL)
 {
 return (NULL);
