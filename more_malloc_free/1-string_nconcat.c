@@ -16,11 +16,11 @@ char *ptr;
 unsigned int x,i; 
 if (s1 == NULL)
 {
-s1 = '\0';
+s1 = "";
 }
 if (s2 == NULL)
 {
-s2 = '\0';
+s2 = "";
 }
 if (_strlen(s2) < n)
 {
