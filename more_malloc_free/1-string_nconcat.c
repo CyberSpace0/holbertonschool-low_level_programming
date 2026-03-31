@@ -16,7 +16,7 @@ if (s1 == NULL || s2 == NULL)
 {
 return ('\0');
 }
-ptr = malloc((_strlen(s1) + n) * sizeof(char));
+ptr = malloc((_strlen(s1) + n + 1) * sizeof(char));
 if (ptr == NULL)
 {
 return (NULL);
@@ -30,7 +30,7 @@ for (x = 0; x < n; x++)
 {
 ptr[i + x] = s2[x];
 }
-
+ptr[i + x] = '\0';
 return (ptr);
 }
 
