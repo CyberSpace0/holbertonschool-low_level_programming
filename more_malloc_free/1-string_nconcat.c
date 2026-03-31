@@ -4,8 +4,10 @@
 
 
 /**
-* malloc_checked - entry point
-* @b: length
+* string_nconcat - entry point
+* @s1: length
+* @s2: length
+* @n: length
 * Return: always (0) success
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
