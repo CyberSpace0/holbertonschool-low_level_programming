@@ -23,7 +23,7 @@ if (arr == NULL)
 {
 return (NULL);
 }
-for (i = min; i < max; i++)
+for (i = min; i <= max; i++)
 {
 arr[x] = i;
 x++; 
