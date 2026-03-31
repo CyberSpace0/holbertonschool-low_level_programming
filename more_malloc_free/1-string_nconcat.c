@@ -22,6 +22,10 @@ if (s2 == NULL)
 {
 s2 = '\0';
 }
+if (_strlen(s2) > n)
+{
+n = _strlen(s2);
+}
 ptr = malloc((_strlen(s1) + n + 1) * sizeof(char));
 if (ptr == NULL)
 {
