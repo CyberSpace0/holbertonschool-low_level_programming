@@ -22,7 +22,7 @@ if (s2 == NULL)
 {
 s2 = '\0';
 }
-if (_strlen(s2) > n)
+if (_strlen(s2) < n)
 {
 n = _strlen(s2);
 }
