@@ -18,12 +18,12 @@ if (min > max)
 {
 return (NULL);
 }
-arr = malloc((max - min) * sizeof(int));
+arr = malloc((max - min + 1) * sizeof(int));
 if (arr == NULL)
 {
 return (NULL);
 }
-for (i = min; i <= max; i++)
+for (i = min; i < max; i++)
 {
 arr[x] = i;
 x++; 
