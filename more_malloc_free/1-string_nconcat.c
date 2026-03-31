@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /**
 * malloc_checked - entry point
 * @b: length
@@ -10,7 +11,8 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *ptr;
-int i,x;
+int i;
+unsigned int x;
 if (s1 == NULL || s2 == NULL)
 {
 return ('\0');
@@ -39,7 +41,7 @@ return (ptr);
  * @str: string to measure
  * Return: length of the string
  */
-int _strlen(char *str)
+unsigned int _strlen(char *str)
 {
 unsigned int len = 0;
 while (str[len] != '\0')
