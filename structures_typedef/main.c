@@ -1,5 +1,7 @@
-#include "main.h"
 #include <stdio.h>
+#include "dog.h"
+#include "main.h"
+
 
 /**
  * main - check the code
@@ -8,19 +10,9 @@
  */
 int main(void)
 {
-    int r;
+    struct dog my_dog;
 
-    r = _pow_recursion(1, 10);
-    printf("%d\n", r);
-    r = _pow_recursion(1024, 0);
-    printf("%d\n", r);
-    r = _pow_recursion(2, 16);
-    printf("%d\n", r);
-    r = _pow_recursion(5, 2);
-    printf("%d\n", r);
-    r = _pow_recursion(5, -2);
-    printf("%d\n", r);
-    r = _pow_recursion(-5, 3);
-    printf("%d\n", r);
+    init_dog(&my_dog, "Poppy", 3.5, "Bob");
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
     return (0);
 }
