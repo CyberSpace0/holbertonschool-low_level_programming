@@ -3,8 +3,7 @@
 #include <stdio.h>
 
 /**
- * void print_dog(struct dog *d)
- - check the code
+ * print_dog - dsds
  * @d: dafdf
  * Return: Always 0.
  */
