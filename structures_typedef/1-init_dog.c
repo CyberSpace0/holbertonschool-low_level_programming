@@ -5,7 +5,7 @@
 
 /**
  * init_dog - check the code
- * @b: dafdf
+ * @d: dafdf
  * @name: dfadfa
  * @age: float
  * @owner: dfasf
