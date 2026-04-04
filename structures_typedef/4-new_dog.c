@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 int _strlen(char *str);
+char *_strdup(char *str);
 /**
  * new_dog - dsds
  * @name: dafdf
