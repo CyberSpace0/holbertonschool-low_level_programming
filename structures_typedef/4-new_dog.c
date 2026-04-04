@@ -41,7 +41,11 @@ d->age = age;
 return (d);
 }
 
-
+/**
+ * _strlen - dsds
+ * @str: dafdf
+ * Return: Always 0.
+ */
 int _strlen(char *str)
 {
 int len_name;
@@ -52,6 +56,11 @@ len_name++;
 return (len_name);
 }
 
+/**
+ * _strdup - dsds
+ * @str: dafdf
+ * Return: Always 0.
+ */
 char *_strdup(char *str)
 {
 int len = 0, i;
