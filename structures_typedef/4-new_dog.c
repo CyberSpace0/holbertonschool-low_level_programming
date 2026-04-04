@@ -2,8 +2,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
-
 /**
  * new_dog - dsds
  * @name: dafdf
@@ -38,7 +36,6 @@ if (d->name == NULL)
 free(d);
 return (NULL);
 }
-
 d->owner = malloc(len_owner + 1);
 if (d->owner == NULL)
 {
@@ -56,8 +53,6 @@ for (i = 0; i < len_owner; i++)
 d->owner[i] = owner[i];
 }
 d->owner[i] = '\0';
-
 d->age = age;
-
 return (d);
 }
