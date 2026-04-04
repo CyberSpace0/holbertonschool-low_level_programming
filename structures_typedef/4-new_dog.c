@@ -49,7 +49,7 @@ while (str[len_name] != '\0')
 {
 len_name++;
 }
-return len_name;
+return (len_name);
 }
 
 char *_strdup(char *str)
@@ -58,7 +58,7 @@ int len = 0, i;
 char *copy;
 if (!str)
 {
-return NULL;
+return (NULL);
 }
 while (str[len])
 {
@@ -67,7 +67,7 @@ len++;
 copy = malloc(len + 1);
 if (!copy)
 {
-return NULL;
+return (NULL);
 }
 for (i = 0; i <= len; i++)
 {
