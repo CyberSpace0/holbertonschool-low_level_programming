@@ -5,7 +5,7 @@
 
 
 /**
- * print_dog - dsds
+ * new_dog - dsds
  * @d: dafdf
  * Return: Always 0.
  */
