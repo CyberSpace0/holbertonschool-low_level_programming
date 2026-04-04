@@ -6,7 +6,9 @@
 
 /**
  * new_dog - dsds
- * @d: dafdf
+ * @name: dafdf
+ * @age: daf
+ * @owner: dfa
  * Return: Always 0.
  */
 dog_t *new_dog(char *name, float age, char *owner)
@@ -38,7 +40,7 @@ return (NULL);
 }
 
 d->owner = malloc(len_owner + 1);
-if (d->name == NULL)
+if (d->owner == NULL)
 {
 free(d->name);
 free(d);
