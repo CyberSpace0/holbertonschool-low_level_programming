@@ -2,6 +2,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+int _strlen(char *str);
 /**
  * new_dog - dsds
  * @name: dafdf
@@ -22,14 +24,8 @@ if (d == NULL)
 {
 return (NULL);
 }
-while (name[len_name] != '\0')
-{
-len_name++;
-}
-while (owner[len_owner] != '\0')
-{
-len_owner++;
-}
+len_name = _strlen(name);
+len_owner = _strlen(owner);
 d->name = malloc(len_name + 1);
 if (d->name == NULL)
 {
@@ -55,4 +51,39 @@ d->owner[i] = owner[i];
 d->owner[i] = '\0';
 d->age = age;
 return (d);
+}
+
+
+int _strlen(char *str)
+{
+int len_name;
+while (str[len_name] != '\0')
+{
+len_name++;
+}
+return len_name;
+}
+
+char *_strdup(char *str)
+{
+int len = 0, i;
+char *copy;
+if (!str)
+{
+return NULL;
+}
+while (str[len])
+{
+len++;
+}
+copy = malloc(len + 1);
+if (!copy)
+{
+return NULL;
+}
+for (i = 0; i <= len; i++)
+{
+copy[i] = str[i];
+}
+return (copy);
 }
