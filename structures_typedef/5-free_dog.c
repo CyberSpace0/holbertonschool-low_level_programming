@@ -1,0 +1,17 @@
+#include "dog.h"
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * free_dog - dsds
+ * @d: dafdf
+ * Return: Always 0.
+ */
+void free_dog(dog_t *d)
+{
+free(d->name);
+free(d->age);
+free(d->owner);
+free(d);
+}
