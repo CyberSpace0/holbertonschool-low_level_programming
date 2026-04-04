@@ -24,31 +24,19 @@ if (d == NULL)
 {
 return (NULL);
 }
-len_name = _strlen(name);
-len_owner = _strlen(owner);
-d->name = malloc(len_name + 1);
-if (d->name == NULL)
+d->name = _strdup(name);
+if (!d->name)
 {
 free(d);
 return (NULL);
 }
-d->owner = malloc(len_owner + 1);
-if (d->owner == NULL)
+d->owner = _strdup(owner);
+if (!d->owner)
 {
 free(d->name);
 free(d);
 return (NULL);
 }
-for (i = 0; i < len_name; i++)
-{
-d->name[i] = name[i];
-}
-d->name[i] = '\0';
-for (i = 0; i < len_owner; i++)
-{
-d->owner[i] = owner[i];
-}
-d->owner[i] = '\0';
 d->age = age;
 return (d);
 }
