@@ -8,10 +8,10 @@
 * @action: ddd
 * Return: always (0) success
 */
-void array_iterator(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array, int size, void (*action)(int))
 {
 int i;
-void (*ptr)(char *);
+void (*ptr)(int);
 ptr = action;
 for (i = 0; i < size; i++)
 {
