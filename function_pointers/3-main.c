@@ -12,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-int r,d,f;
+int r, d, f;
 int (*ptr)(int, int);
 if (argc == 3)
 {
@@ -21,7 +21,7 @@ exit(98);
 }
 d = atoi(argv[1]);
 f = atoi(argv[3]);
-if ((strcmp("%", argv[2]) || strcmp("/", argv[2])) && (d == 0 ||f == 0))
+if ((strcmp("%", argv[2]) || strcmp("/", argv[2])) && (d == 0 || f == 0))
 {
 printf("Error\n");
 exit(100);
