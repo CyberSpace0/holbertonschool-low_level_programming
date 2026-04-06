@@ -3,6 +3,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+/**
+ * main - check the code
+ * @argc: length
+ * @argv: argv
+ * Return: Always 0.
+ */
 int main(int argc, char *argv[])
 {
 int r;
@@ -20,7 +27,7 @@ exit(100);
 ptr = get_op_func(argv[2]);
 if (ptr == 0)
 {
-printf("Error\n");
+printf("Error\n ");
 exit(99);
 }
 r = ptr(atoi(argv[1]), atoi(argv[3]));
