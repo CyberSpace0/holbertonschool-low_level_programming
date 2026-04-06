@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "3-calc.h"
 #include <stdlib.h>
-
+#include <string.h>
 
 int main(int argc, char *argv[])
 {
@@ -12,7 +12,7 @@ if (argc == 3)
 printf("Error");
 exit(98);
 }
-if ((argv[2] == "%" || argv[2] == "/") && (argv[1] == 0 || argv[3] == 0))
+if ((strcmp("%", argv[2]) || strcmp("/", argv[2])) && (atoi(argv[1]) == 0 || atoi(argv[3]) == 0))
 {
 printf("Error");
 exit(100);
