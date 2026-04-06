@@ -17,7 +17,7 @@ if (size <= 0)
 {
 return (-1);
 }
-if (!array)
+if (!array || !cmp)
 {
 return (-1);
 }
