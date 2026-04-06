@@ -24,7 +24,7 @@ printf("Error");
 exit(99);
 }
 r = ptr(atoi(argv[1]), atoi(argv[3]));
-printf("%i", r);
+printf("%i\n", r);
 
 
 return (0);
