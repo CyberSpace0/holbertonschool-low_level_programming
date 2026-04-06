@@ -9,18 +9,18 @@ int r;
 int (*ptr)(int, int);
 if (argc == 3)
 {
-printf("Error");
+printf("Error\n");
 exit(98);
 }
 if ((strcmp("%", argv[2]) || strcmp("/", argv[2])) && (atoi(argv[1]) == 0 || atoi(argv[3]) == 0))
 {
-printf("Error");
+printf("Error\n");
 exit(100);
 }
 ptr = get_op_func(argv[2]);
 if (ptr == 0)
 {
-printf("Error");
+printf("Error\n");
 exit(99);
 }
 r = ptr(atoi(argv[1]), atoi(argv[3]));
