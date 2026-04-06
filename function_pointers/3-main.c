@@ -12,14 +12,16 @@
  */
 int main(int argc, char *argv[])
 {
-int r;
+int r,d,f;
 int (*ptr)(int, int);
 if (argc == 3)
 {
 printf("Error\n");
 exit(98);
 }
-if ((strcmp("%", argv[2]) || strcmp("/", argv[2])) && (atoi(argv[1]) == 0 || atoi(argv[3]) == 0))
+d = atoi(argv[1]);
+f = atoi(argv[3]);
+if ((strcmp("%", argv[2]) || strcmp("/", argv[2])) && (d == 0 ||f == 0))
 {
 printf("Error\n");
 exit(100);
