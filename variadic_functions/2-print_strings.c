@@ -25,8 +25,8 @@ if (i == (n - 1))
 {
 if (ss == NULL)
 {
-ss = "nil";
-printf("%s%s", ss, separator);
+ss = "(nil)";
+printf("%s%s", ss);
 }
 else
 {
@@ -38,7 +38,7 @@ else
 
 if (ss == NULL)
 {
-ss = "nil";
+ss = "(nil)";
 printf("%s%s", ss, separator);
 }
 else
