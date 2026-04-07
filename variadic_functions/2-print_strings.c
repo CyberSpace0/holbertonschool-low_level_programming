@@ -27,7 +27,7 @@ if (i == (n - 1))
 if (ss == NULL)
 {
 ss = "(nil)";
-printf("%s%s", ss);
+printf("%s", ss);
 }
 else
 {
