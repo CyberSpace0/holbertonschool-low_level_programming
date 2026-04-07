@@ -23,7 +23,15 @@ for (i = 0; i < n; i++)
 ss = va_arg(args, char*);
 if (i == (n - 1))
 {
+if (ss == NULL)
+{
+ss = "nil";
+printf("%s%s", ss, separator);
+}
+else
+{
 printf("%s", ss);
+}
 }
 else
 {
