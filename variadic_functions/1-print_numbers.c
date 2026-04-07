@@ -25,5 +25,5 @@ printf("%i%s",va_arg(args, int), separator);
 }
 }
 va_end(args);
-printf('\n');
+printf("\n");
 }
