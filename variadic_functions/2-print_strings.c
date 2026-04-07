@@ -2,7 +2,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 
-void end(ss);
+void end(char *ss);
 
 /**
  * print_strings - check the code
@@ -46,7 +46,14 @@ va_end(args);
 printf("\n");
 }
 
-void end(ss)
+
+/**
+ * end - check the code
+ * @ss: int value
+ * Return: Always 0.
+ */
+
+void end(char *ss)
 {
 
 if (ss == NULL)
