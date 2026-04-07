@@ -2,6 +2,8 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 
+void end(ss);
+
 /**
  * print_strings - check the code
  * @separator: int value
@@ -23,17 +25,7 @@ for (i = 0; i < n; i++)
 ss = va_arg(args, char*);
 if (i == (n - 1))
 {
-
-if (ss == NULL)
-{
-ss = "(nil)";
-printf("%s", ss);
-}
-else
-{
-printf("%s", ss);
-}
-
+end(ss);
 }
 else
 {
@@ -52,4 +44,19 @@ printf("%s%s", ss, separator);
 }
 va_end(args);
 printf("\n");
+}
+
+void end(ss)
+{
+
+if (ss == NULL)
+{
+ss = "(nil)";
+printf("%s", ss);
+}
+else
+{
+printf("%s", ss);
+}
+
 }
