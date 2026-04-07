@@ -21,11 +21,11 @@ for (i = 0; i < n; i++)
 {
 if (i == (n - 1))
 {
-printf("%i",va_arg(args, int));
+printf("%i", va_arg(args, int));
 }
 else
 {
-printf("%i%s",va_arg(args, int), separator);
+printf("%i%s", va_arg(args, int), separator);
 }
 }
 va_end(args);
