@@ -16,7 +16,7 @@ int len, i = 0;
 char *sep;
 char *ss;
 va_list args;
-va_start(args, format); 
+va_start(args, format);
 len = _strlen(format);
 sep = ", ";
 while (len > i)
