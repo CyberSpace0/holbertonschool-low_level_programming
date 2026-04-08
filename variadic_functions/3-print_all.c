@@ -14,24 +14,26 @@ void print_all(const char * const format, ...)
 {
 int len, i = 0;
 char *sep;
+char *ss;
 va_list args;
 va_start(args, format); 
 len = _strlen(format);
+sep = ", ";
 while (len > i)
 {
-
 if (i == len - 1)
 {
 sep = "";
 }
-if (i < len - 1)
-{
-sep = ", ";
-}
 switch (format[i])
 {
 case 's':
-printf("%s%s", va_arg(args, char*), sep);
+ss = va_arg(args, char*);
+if (ss == NULL)
+{
+ss = "(nil)";
+}
+printf("%s%s", ss, sep);
 break;
 case 'c':
 printf("%c%s", va_arg(args, int), sep);
