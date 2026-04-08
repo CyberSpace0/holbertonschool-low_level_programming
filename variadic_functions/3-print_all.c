@@ -31,16 +31,16 @@ sep = ", ";
 switch (format[i])
 {
 case 's':
-printf("%s%s", va_arg(args, char*), sep);
+printf("%s%s\n", va_arg(args, char*), sep);
 break;
 case 'c':
-printf("%c%s", va_arg(args, int), sep);
+printf("%c%s\n", va_arg(args, int), sep);
 break;
 case 'i':
-printf("%i%s", va_arg(args, int), sep);
+printf("%i%s\n", va_arg(args, int), sep);
 break;
 case 'f':
-printf("%f%s", va_arg(args, double), sep);
+printf("%f%s\n", va_arg(args, double), sep);
 break;
 
 
