@@ -60,7 +60,7 @@ printf("\n");
 int _strlen(const char *str)
 {
 unsigned int len = 0;
-while (str[len] != '\0')
+while (str && str[len] != '\0')
 {
 len++;
 }
