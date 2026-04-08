@@ -24,7 +24,7 @@ if (i == len - 1)
 {
 sep = "";
 }
-else
+if (i > len - 1)
 {
 sep = ", ";
 }
