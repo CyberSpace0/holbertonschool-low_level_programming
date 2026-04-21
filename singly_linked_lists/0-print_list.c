@@ -38,7 +38,7 @@ _putchar('\n');
 
 }
 return (i);
-   
+
 }
 
 
