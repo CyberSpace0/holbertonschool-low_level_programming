@@ -6,7 +6,7 @@
 
 
 /**
- * print_list - check the code
+ * list_len - check the code
  * @h:struct
  * Return: Always 0.
  */
