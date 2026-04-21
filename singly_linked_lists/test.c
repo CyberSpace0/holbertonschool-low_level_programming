@@ -17,8 +17,15 @@ typedef struct list_s
  */
 int main()
 {
-
+int i;
 list_t *head = malloc(sizeof(list_t));
+for (i = 0; i < 5; i++)
+{
+list_t *dd;
+dd->str = "welcome";
+dd->len = 331;
+dd->next = head;
+}
 list_t *second;
 list_t hello = {"khalid", 22, NULL};
 second = &hello;
