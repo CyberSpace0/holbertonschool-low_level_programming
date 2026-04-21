@@ -11,13 +11,15 @@
  * @head: ddd
  * Return: Always 0.
  */
-list_t *add_node_end(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str)
 {
 size_t len = 0;
 list_t *node;
 node = malloc(sizeof(list_t));
 if (node == NULL)
+{
 return (NULL);
+}
 node->str = strdup(str);
 if (node->str == NULL)
 {
