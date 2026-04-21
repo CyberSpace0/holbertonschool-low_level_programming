@@ -7,7 +7,7 @@
 
 /**
  * print_list - check the code
- * @h:struct 
+ * @h:struct
  * Return: Always 0.
  */
 size_t print_list(const list_t *h)
@@ -38,7 +38,7 @@ _putchar('\n');
 
 }
 return (i);
-    
+   
 }
 
 
