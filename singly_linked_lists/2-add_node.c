@@ -32,6 +32,7 @@ len++;
 node->len = len;
 node->next = *head;
 
+*head = node;
 return (node);
 }
 
