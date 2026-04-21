@@ -43,7 +43,7 @@ return (i);
 
 
 /**
- * print_int - prints an integer
+ * print_Int - prints an integer
  * @n: integer to print
  * Return: number of printed digits
  */
