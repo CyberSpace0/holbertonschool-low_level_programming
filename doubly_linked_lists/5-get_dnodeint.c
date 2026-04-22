@@ -20,7 +20,7 @@ if (i == index)
 {
 return (node);
 }
-node = head->next;
+node = node->next;
 i++;
 }
 return (NULL);
