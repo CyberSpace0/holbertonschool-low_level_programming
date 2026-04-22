@@ -44,16 +44,17 @@ _putchar(str[i]);
 }
 _putchar('\n');
 forword = *head;
-if (*head == NULL)
-{
-*head = node;
-}
 
 while (forword->next != NULL)
 {
 forword = forword->next;
 }
 forword->next = node;
+
+if (*head == NULL)
+{
+*head = node;
+}
 
 return (node);
 }
