@@ -4,8 +4,9 @@
 #include "lists.h"
 
 /**
- * free_dlistint - check the code
+ * get_dnodeint_at_index - check the code
  * @head:dd
+ * @index: int 
  * Return: Always EXIT_SUCCESS.
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
@@ -13,7 +14,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 unsigned int i = 0;
 dlistint_t *node;
 node = head;
-while (head != NULL)
+while (node != NULL)
 {
 if (i == index)
 {
