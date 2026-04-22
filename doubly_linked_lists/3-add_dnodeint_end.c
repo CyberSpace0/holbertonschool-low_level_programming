@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - check the code
+ * add_dnodeint_end - check the code
  * @head:dd
  * @n: int value
  * Return: Always EXIT_SUCCESS.
