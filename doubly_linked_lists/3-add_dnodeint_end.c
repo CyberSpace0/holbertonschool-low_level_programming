@@ -25,7 +25,7 @@ node->prev = NULL;
 
 if ((*head) != NULL)
 {
-last = head;
+last = *head;
 while (last != NULL)
 {
 if (last->next == NULL)
