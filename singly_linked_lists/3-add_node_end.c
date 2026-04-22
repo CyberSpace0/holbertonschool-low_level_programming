@@ -31,18 +31,12 @@ while (str[len])
 {
 len++;
 }
-_putchar('[');
-print_Int(len);
-_putchar(']');
+
 node->len = len;
 node->next = NULL;
 
-_putchar(' ');
-for (i = 0; i < len; i++)
-{
-_putchar(str[i]);
-}
-_putchar('\n');
+
+
 if (*head == NULL)
 {
 *head = node;
