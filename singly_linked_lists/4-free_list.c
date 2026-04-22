@@ -16,6 +16,5 @@ while(head != NULL)
 {
 free(head->next);
 }
-free(head);
 }
 
