@@ -16,8 +16,9 @@ while (head != NULL)
 {
 node = head->next;
 
-free(node);
+free(head);
 
+head = node;
 }
 
 }
