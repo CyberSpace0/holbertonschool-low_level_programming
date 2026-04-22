@@ -41,7 +41,7 @@ forword = forword->next;
 }
 if (head == NULL)
 {
-head->next = node;
+forword->next = node;
 }
 *head = forword;
 
