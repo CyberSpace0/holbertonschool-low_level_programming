@@ -35,7 +35,7 @@ while (last->next != NULL)
 last = last->next;
 }
 last->next = node;
-last->prev = last;
+node->prev = last;
 
 return (node);
 }
