@@ -14,10 +14,6 @@ index = (int*)index;
 unsigned int i = 0;
 dlistint_t *node;
 node = head;
-if (index == NULL)
-{
-return (NULL);
-}
 while (head != NULL)
 {
 if (i == index)
@@ -27,5 +23,5 @@ return (node);
 node = head->next;
 i++;
 }
-
+return (NULL);
 }
