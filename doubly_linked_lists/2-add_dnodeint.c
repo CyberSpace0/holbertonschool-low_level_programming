@@ -18,6 +18,11 @@ return (NULL);
 
 node->n = n;
 node->next = *head;
+if ((*head)->prev == NULL)
+{
+(*head)->prev = node;
+}
+
 node->prev = NULL;
 
 *head = node;
