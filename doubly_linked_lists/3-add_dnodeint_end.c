@@ -20,7 +20,7 @@ return (NULL);
 }
 
 node->n = n;
-node->next = *head;
+node->next = NULL;
 node->prev = NULL;
 
 if ((*head) != NULL)
