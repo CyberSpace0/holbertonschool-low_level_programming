@@ -13,7 +13,7 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-int i = 0;
+size_t i = 0;
 size_t len = 0;
 list_t *node, *forword;
 node = malloc(sizeof(list_t));
