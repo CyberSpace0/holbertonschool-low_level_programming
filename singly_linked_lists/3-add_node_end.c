@@ -41,15 +41,14 @@ _putchar(' ');
 for (i = 0; i < len; i++)
 {
 _putchar(str[i]);
-i++;
 }
-
+_putchar('\n');
 forword = *head;
-while (forword != NULL)
+while (forword->next != NULL)
 {
 forword = forword->next;
 }
-if (head == NULL)
+if (*head == NULL)
 {
 forword->next = node;
 }
