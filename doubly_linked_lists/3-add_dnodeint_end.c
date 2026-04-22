@@ -21,23 +21,21 @@ return (NULL);
 
 node->n = n;
 node->next = NULL;
-node->prev = NULL;
 
-if ((*head) != NULL)
+if (*head == NULL)
 {
-last = *head;
-while (last != NULL)
-{
-if (last->next == NULL)
-{
-node->prev = last;
+node->prev = NULL;
+*head = node;
+return (node);
 }
+
+last = *head;
+while (last->next != NULL)
+{
 last = last->next;
 }
+last->next = node;
+last->prev = last;
 
-}
-
-
-*head = node;
 return (node);
 }
