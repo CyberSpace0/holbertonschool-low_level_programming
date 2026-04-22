@@ -43,6 +43,13 @@ for (i = 0; i < len; i++)
 _putchar(str[i]);
 }
 _putchar('\n');
+if (*head == NULL)
+{
+*head = node;
+return (node);
+}
+
+
 forword = *head;
 
 while (forword->next != NULL)
@@ -51,10 +58,6 @@ forword = forword->next;
 }
 forword->next = node;
 
-if (*head == NULL)
-{
-*head = node;
-}
 
 return (node);
 }
