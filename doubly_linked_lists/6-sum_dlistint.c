@@ -4,8 +4,8 @@
 #include "lists.h"
 
 /**
- * print_dlistint - check the code
- * @h:dd
+ * sum_dlistint - check the code
+ * @head:dd
  * Return: Always EXIT_SUCCESS.
  */
 int sum_dlistint(dlistint_t *head)
