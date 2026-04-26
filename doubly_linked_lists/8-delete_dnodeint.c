@@ -36,7 +36,6 @@ i++;
 
 if (node == NULL)
 {
-free(node);
 return (-1);
 }
 
@@ -53,6 +52,6 @@ node->next = NULL;
 }
 
 
-
+free(node);
 return (1);
 }
