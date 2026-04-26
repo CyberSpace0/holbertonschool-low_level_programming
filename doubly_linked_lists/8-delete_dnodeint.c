@@ -36,6 +36,7 @@ i++;
 
 if (node == NULL)
 {
+free(node);
 return (-1);
 }
 
