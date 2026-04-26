@@ -28,7 +28,7 @@ if (*h != NULL)
 *h = ls;
 return (ls);
 }
-while (node != NULL && i < idx)
+while (node != NULL && i < idx - 1)
 {
 node = node->next;
 i++;
