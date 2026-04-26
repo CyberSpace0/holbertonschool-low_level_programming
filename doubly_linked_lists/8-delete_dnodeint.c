@@ -24,6 +24,7 @@ if (index == 0)
 node = node->next;
 node->prev = NULL;
 *head = node;
+free(node);
 return (1);
 }
 
@@ -35,6 +36,7 @@ if (node->next->next != NULL)
 {
 node->next = node->next->next;
 node->next->prev = node;
+free(node);
 return (1);
 break;
 }
