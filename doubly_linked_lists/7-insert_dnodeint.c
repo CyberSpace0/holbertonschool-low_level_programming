@@ -24,7 +24,9 @@ if (idx == 0)
 ls->prev = NULL;
 ls->next = *h;
 if (*h != NULL)
-    (*h)->prev = ls;
+{
+(*h)->prev = ls;
+}
 *h = ls;
 return (ls);
 }
@@ -45,4 +47,5 @@ node->next->prev = ls;
 }
 node->next = ls;
 
-return (ls);}
+return (ls);
+}
