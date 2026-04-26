@@ -28,26 +28,22 @@ node->prev = NULL;
 return (1);
 }
 
-while (node != NULL)
+while (node != NULL && i < index - 1)
 {
-if (i == index - 1)
-{
+node = node->next;
+i++;
+}
+
 if (node->next->next != NULL)
 {
 node->next = node->next->next;
 free(node->next->prev);
 node->next->prev = node;
 return (1);
-break;
 }
 else
 {
 node->next = NULL;
-}
-
-}
-node = node->next;
-i++;
 }
 
 
