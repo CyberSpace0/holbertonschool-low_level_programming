@@ -22,7 +22,8 @@ return (-1);
 if (index == 0)
 {
 node = node->next;
-node->prev = NULL;  
+node->prev = NULL;
+*head = node;
 }
 
 while (node != NULL)
