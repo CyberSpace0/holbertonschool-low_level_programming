@@ -19,11 +19,6 @@ return (NULL);
 }
 ls->n = n;
 
-if (h == NULL || *h == NULL)
-{
-return (NULL);
-}
-
 if (idx == 0)
 {
 ls->prev = NULL;
