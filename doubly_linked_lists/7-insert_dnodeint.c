@@ -37,9 +37,12 @@ if (node == NULL)
 {
 return (NULL);
 }
-ls->next = node;
-ls->prev = node->prev;
-node->prev->next = ls;
-node->prev = ls;
-return (ls);
+ls->next = node->next;
+ls->prev = node;
+if (node->next != NULL)
+{
+node->next->prev = ls;
 }
+node->next = ls;
+
+return (ls);}
