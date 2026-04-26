@@ -24,6 +24,7 @@ if (index == 0)
 node = node->next;
 node->prev = NULL;
 *head = node;
+return (1);
 }
 
 while (node != NULL)
