@@ -22,6 +22,7 @@ return (-1);
 if (index == 0)
 {
 node = node->next;
+free(node->prev);
 node->prev = NULL;
 *head = node;
 return (1);
@@ -33,8 +34,6 @@ if (i == index - 1)
 {
 if (node->next->next != NULL)
 {
-free(node->next->prev);
-free(node->next->next);
 node->next = node->next->next;
 node->next->prev = node;
 return (1);
