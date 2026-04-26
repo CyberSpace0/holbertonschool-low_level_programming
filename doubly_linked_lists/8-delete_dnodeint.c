@@ -48,6 +48,7 @@ node->next = NULL;
 }
 node = node->next;
 i++;
+return (1);
 }
 
 
