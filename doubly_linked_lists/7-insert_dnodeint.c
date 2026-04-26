@@ -20,7 +20,7 @@ return (NULL);
 ls->n = n;
 
 
-if (h == NULL)
+if (*h == NULL)
 {
 return (NULL);
 }
@@ -31,8 +31,14 @@ if (i == idx)
 {
 ls->next = node->next;
 ls->prev = node;
+if (node->next != NULL)
+{
+node->next->prev = ls;
+}
 node->next = ls;
+
 i++;
+break;
 }
 else
 {
