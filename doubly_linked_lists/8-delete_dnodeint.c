@@ -34,6 +34,11 @@ node = node->next;
 i++;
 }
 
+if (node == NULL)
+{
+return (-1);
+}
+
 if (node->next->next != NULL)
 {
 node->next = node->next->next;
@@ -48,5 +53,5 @@ node->next = NULL;
 
 
 
-return (-1);
+return (1);
 }
