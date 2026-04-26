@@ -19,6 +19,11 @@ return (NULL);
 }
 ls->n = n;
 
+if (h == NULL || *h == NULL)
+{
+return (NULL);
+}
+
 if (idx == 0)
 {
 ls->prev = NULL;
@@ -34,7 +39,9 @@ node = node->next;
 i++;
 }
 if (node == NULL)
-    return (NULL);
+{
+return (NULL);
+}
 ls->next = node;
 ls->prev = node->prev;
 node->prev->next = ls;
