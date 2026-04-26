@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * insert_dnodeint_at_index - check the code
+ * delete_dnodeint_at_index - check the code
  * @head:dd
  * @index: index
  * Return: Always EXIT_SUCCESS.
@@ -48,6 +48,11 @@ node->next = NULL;
 }
 node = node->next;
 i++;
+}
+
+if (node == NULL)
+{
+return (-1);
 }
 
 return (-1);
