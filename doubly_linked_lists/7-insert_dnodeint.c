@@ -39,8 +39,8 @@ else
 {
 *h = ls;
 node->prev = ls;
-break;
 }
+break;
 }
 else
 {
