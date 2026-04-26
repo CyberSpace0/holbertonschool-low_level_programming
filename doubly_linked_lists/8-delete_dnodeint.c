@@ -50,10 +50,7 @@ node = node->next;
 i++;
 }
 
-if (node == NULL)
-{
-return (-1);
-}
 
-return (-1);
+
+return (1);
 }
