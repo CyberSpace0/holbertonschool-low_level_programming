@@ -29,16 +29,18 @@ while (node != NULL)
 {
 if (i == idx)
 {
-ls->next = node->next;
-ls->prev = node;
-if (node->next != NULL)
+ls->next = node;
+ls->prev = node->prev;
+if (node->prev != NULL)
 {
-node->next->prev = ls;
+node->prev->next = ls;
 }
-node->next = ls;
-
-i++;
+else
+{
+*h = ls;
+node->prev = ls;
 break;
+}
 }
 else
 {
