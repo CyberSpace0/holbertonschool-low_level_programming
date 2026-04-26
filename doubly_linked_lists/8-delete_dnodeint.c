@@ -35,6 +35,7 @@ if (i == index - 1)
 if (node->next->next != NULL)
 {
 node->next = node->next->next;
+free(node->next->prev);
 node->next->prev = node;
 return (1);
 break;
