@@ -16,7 +16,6 @@ unsigned int i = 0;
 
 if (head == NULL || *head == NULL)
 {
-free(node);
 return (-1);
 }
 
@@ -34,6 +33,8 @@ if (i == index - 1)
 {
 if (node->next->next != NULL)
 {
+free(node->next->prev);
+free(node->next->next);
 node->next = node->next->next;
 node->next->prev = node;
 return (1);
@@ -49,6 +50,5 @@ node = node->next;
 i++;
 }
 
-free(node);
 return (-1);
 }
