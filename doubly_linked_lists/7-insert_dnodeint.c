@@ -38,8 +38,8 @@ node->prev->next = ls;
 else
 {
 *h = ls;
-node->prev = ls;
 }
+node->prev = ls;
 break;
 }
 else
