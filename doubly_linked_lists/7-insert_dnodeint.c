@@ -20,12 +20,20 @@ return (NULL);
 ls->n = n;
 
 
-if (*h == NULL)
+if (idx == 0)
 {
-return (NULL);
+ls->prev = NULL;
+ls->next = *h;
+if (*h != NULL)
+{
+(*h)->prev = ls;
+}
+*h = ls;
+return (ls);
 }
 
-while (node != NULL)
+
+while (node != NULL && i < idx)
 {
 if (i == idx)
 {
@@ -49,6 +57,6 @@ i++;
 }
 }
 
-return (node);
+return (ls);
 
 }
