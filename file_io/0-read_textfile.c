@@ -6,8 +6,9 @@
 
 
 /**
- * main - check the code
- *
+ * read_textfile - check the code
+ * @filename: file
+ * @letters: chars
  * Return: Always EXIT_SUCCESS.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
