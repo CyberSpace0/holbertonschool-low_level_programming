@@ -21,7 +21,7 @@ return (0);
 }
 if (fp == -1)
 {
-return (0)
+return (0);
 }
 
 
