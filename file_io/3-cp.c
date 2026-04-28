@@ -94,5 +94,5 @@ exit(100);
 }
 
 
-return (1);
+return (0);
 }
