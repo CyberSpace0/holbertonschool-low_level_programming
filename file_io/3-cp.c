@@ -20,16 +20,26 @@ size_t i = 0;
 char info[1024];
 int error,data,serror;
 int from,to;
+int farg = 0,sarg = 0;
 if (argc < 2)
 {
 write(STDERR_FILENO,"Usage: cp file_from file_to\n",28);
 exit(97);
 }
+while (argv[1][farg] != '\0')
+{
+farg++;
+}
+while (argv[2][sarg] != '\0')
+{
+sarg++;
+}
+
 from = open(argv[1], O_RDONLY, 0664);
 if (from < 0)
 {
 write(STDERR_FILENO,"Error: Can't read from file ",28);
-for (i = 0; i < strlen(argv[1]); i++)
+for (i = 0; i < farg; i++)
 {
 _putchar(argv[1][i]);
 }
@@ -40,7 +50,7 @@ data = read(from, info, 1024);
 if (data < 0)
 {
 write(STDERR_FILENO,"Error: Can't read from file ",28);
-for (i = 0; i < strlen(argv[1]); i++)
+for (i = 0; i < farg; i++)
 {
 _putchar(argv[1][i]);
 }
@@ -50,7 +60,7 @@ to = open(argv[2], O_RDWR | O_TRUNC | O_CREAT, 0664);
 if (to < 0)
 {
 write(STDERR_FILENO,"Error: Can't write to ",28);
-for (i = 0; i < strlen(argv[2]); i++)
+for (i = 0; i < sarg; i++)
 {
 _putchar(argv[2][i]);
 }
@@ -61,7 +71,7 @@ error = write(to, info, data);
 if (error == -1)
 {
 write(STDERR_FILENO,"Error: Can't write to ",28);
-for (i = 0; i < strlen(argv[2]); i++)
+for (i = 0; i < sarg; i++)
 {
 _putchar(argv[2][i]);
 }
