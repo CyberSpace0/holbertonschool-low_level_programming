@@ -6,8 +6,8 @@
 #define _POSIX_C_SOURCE 200809L
 #include "main.h"
 
-void print_error_read(char *file, int len);
-void print_error_write(char *file, int len);
+void print_error_read(char *file);
+void print_error_write(char *file);
 
 /**
  * main - check the code
@@ -17,49 +17,42 @@ void print_error_write(char *file, int len);
  */
 int main(int argc, char *argv[])
 {
-char info[3000];
-int error, data, serror;
+int data, error, serror;
 int from, to;
-int farg = 0;
-int sarg = 0;
 
 if (argc < 3)
 {
-write(STDERR_FILENO, "Usage: cp file_from file_to\n", 28);
+dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97);
 }
 
-while (argv[1][farg] != '\0')
-farg++;
-
-while (argv[2][sarg] != '\0')
-sarg++;
-
-from = open(argv[1], O_RDONLY, 0664);
+from = open(argv[1], O_RDONLY);
 if (from < 0)
 {
-print_error_read(argv[1], farg);
+print_error_read(argv[1]);
 exit(98);
 }
+
+char info[3000];
 
 data = read(from, info, 3000);
 if (data < 0)
 {
-print_error_read(argv[1], farg);
+print_error_read(argv[1]);
 exit(98);
 }
 
 to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 if (to < 0)
 {
-print_error_write(argv[2], sarg);
+print_error_write(argv[2]);
 exit(99);
 }
 
 error = write(to, info, data);
 if (error == -1)
 {
-print_error_write(argv[2], sarg);
+print_error_write(argv[2]);
 exit(99);
 }
 
@@ -81,27 +74,19 @@ return (0);
 }
 
 /**
- * print_error_read - print read error
+ * print_error_read - prints read error
  */
-void print_error_read(char *file, int len)
+void print_error_read(char *file)
 {
-int i;
-
-write(STDERR_FILENO, "Error: Can't read from file ", 28);
-for (i = 0; i < len; i++)
-_putchar(file[i]);
-_putchar('\n');
+dprintf(STDERR_FILENO,
+"Error: Can't read from file %s\n", file);
 }
 
 /**
- * print_error_write - print write error
+ * print_error_write - prints write error
  */
-void print_error_write(char *file, int len)
+void print_error_write(char *file)
 {
-int i;
-
-write(STDERR_FILENO, "Error: Can't write to ", 22);
-for (i = 0; i < len; i++)
-_putchar(file[i]);
-_putchar('\n');
+dprintf(STDERR_FILENO,
+"Error: Can't write to %s\n", file);
 }
