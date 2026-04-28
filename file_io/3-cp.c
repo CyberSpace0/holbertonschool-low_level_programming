@@ -75,6 +75,7 @@ return (0);
 
 /**
  * print_error_read - prints read error
+ * @file:dd
  */
 void print_error_read(char *file)
 {
@@ -84,6 +85,7 @@ dprintf(STDERR_FILENO,
 
 /**
  * print_error_write - prints write error
+ * @file: sd
  */
 void print_error_write(char *file)
 {
