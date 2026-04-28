@@ -8,7 +8,7 @@
 /**
  * create_file - check the code
  * @filename: file
- * @letters: chars
+ * @text_content: chars
  * Return: Always EXIT_SUCCESS.
  */
 int create_file(const char *filename, char *text_content)
