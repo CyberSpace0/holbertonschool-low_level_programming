@@ -60,22 +60,14 @@ _putchar('\n');
 to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 if (to < 0)
 {
-write(STDERR_FILENO,"Error: Can't write to ",28);
-for (i = 0; i < sarg; i++)
-{
-_putchar(argv[2][i]);
-}
-_putchar('\n');
+dprintf(STDERR_FILENO,
+"Error: Can't read from file %s\n", argv[2]);
 exit (99);
 }
 error = write(to, info, data);
 if (error == -1)
 {
-write(STDERR_FILENO,"Error: Can't write to ",28);
-for (i = 0; i < sarg; i++)
-{
-write(STDERR_FILENO,argv[2][i],1);
-}
+dprintf(STDERR_FILENO,"Error: Can't read from file %s\n", argv[2]);
 exit (99);
 }
 
