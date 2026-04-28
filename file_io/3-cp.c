@@ -60,7 +60,7 @@ _putchar('\n');
 to = open(argv[2], O_RDWR | O_TRUNC | O_CREAT, 0664);
 if (to < 0)
 {
-write(STDERR_FILENO,"Error: Can't write to ",28);
+write(STDERR_FILENO,"Error: Can't open to ",28);
 for (i = 0; i < sarg; i++)
 {
 _putchar(argv[2][i]);
