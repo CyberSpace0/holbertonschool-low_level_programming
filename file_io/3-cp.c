@@ -74,9 +74,8 @@ if (error == -1)
 write(STDERR_FILENO,"Error: Can't write to ",28);
 for (i = 0; i < sarg; i++)
 {
-_putchar(argv[2][i]);
+write(STDERR_FILENO,argv[2][i],1);
 }
-_putchar('\n');
 exit (99);
 }
 
