@@ -17,7 +17,6 @@ void print_error_write(char *file, int len);
  */
 int main(int argc, char *argv[])
 {
-int i = 0;
 char info[3000];
 int error, data, serror;
 int from, to;
