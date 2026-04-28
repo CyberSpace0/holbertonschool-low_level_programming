@@ -22,7 +22,7 @@ int error,data,serror;
 int from,to;
 int farg = 0;
 int sarg = 0;
-if (argc < 2)
+if (argc < 3)
 {
 write(STDERR_FILENO,"Usage: cp file_from file_to\n",28);
 exit(97);
