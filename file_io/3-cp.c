@@ -17,7 +17,7 @@
 int main(int argc, char *argv[])
 {
 int i = 0;
-char info[1024];
+char info[2000];
 int error,data,serror;
 int from,to;
 int farg = 0;
@@ -47,7 +47,7 @@ _putchar(argv[1][i]);
 _putchar('\n');
 exit(98);
 }
-data = read(from, info, 1024);
+data = read(from, info, 2000);
 if (data < 0)
 {
 write(STDERR_FILENO,"Error: Can't read from file ",28);
