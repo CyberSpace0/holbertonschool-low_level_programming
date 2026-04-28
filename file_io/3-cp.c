@@ -16,7 +16,7 @@
  */
 int main(int argc, char *argv[])
 {
-size_t i = 0;
+int i = 0;
 char info[1024];
 int error,data,serror;
 int from,to;
