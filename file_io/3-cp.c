@@ -20,7 +20,8 @@ int i = 0;
 char info[1024];
 int error,data,serror;
 int from,to;
-int farg = 0,sarg = 0;
+int farg = 0;
+int sarg = 0;
 if (argc < 2)
 {
 write(STDERR_FILENO,"Usage: cp file_from file_to\n",28);
