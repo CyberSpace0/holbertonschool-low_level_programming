@@ -60,13 +60,13 @@ _putchar('\n');
 to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 if (to < 0)
 {
-dprintf(STDERR_FILENO,"Error: Can't write from file %s\n", argv[2]);
+dprintf(STDERR_FILENO,"Error: Can't write to %s\n", argv[2]);
 exit (99);
 }
 error = write(to, info, data);
 if (error == -1)
 {
-dprintf(STDERR_FILENO,"Error: Can't write from file %s\n", argv[2]);
+dprintf(STDERR_FILENO,"Error: Can't write to %s\n", argv[2]);
 exit (99);
 }
 
