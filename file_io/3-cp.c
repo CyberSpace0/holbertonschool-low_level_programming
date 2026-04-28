@@ -57,7 +57,7 @@ _putchar(argv[1][i]);
 }
 _putchar('\n');
 }
-to = open(argv[2], O_RDWR | O_TRUNC | O_CREAT, 0664);
+to = open(argv[2], O_RDWR | O_TRUNC, 0664);
 if (to < 0)
 {
 write(STDERR_FILENO,"Error: Can't write to ",28);
