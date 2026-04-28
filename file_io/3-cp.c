@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 {
 int data, error, serror;
 int from, to;
+char info[3000];
 
 if (argc < 3)
 {
@@ -33,7 +34,6 @@ print_error_read(argv[1]);
 exit(98);
 }
 
-char info[3000];
 
 data = read(from, info, 3000);
 if (data < 0)
