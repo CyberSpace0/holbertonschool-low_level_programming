@@ -30,9 +30,9 @@ if (node->key == NULL || node->value == NULL)
 return (0);
 }
 index = key_index((const unsigned char *)key, ht->size);
-if (strcmp(ht->array[index]->key, key) == 0)
+if (ht->array[index] != NULL && strcmp(ht->array[index]->key, key) == 0)
 {
-ht->array[index]->value = value;
+ht->array[index]->value = strdup(value);
 }
 else
 {
