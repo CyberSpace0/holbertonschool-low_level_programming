@@ -29,13 +29,16 @@ return (0);
 }
 index = key_index((const unsigned char *)key, ht->size);
 
-if (ht->array[index]->key != NULL)
+node = ht->array[index];
+while (node)
 {
-ht->value = strdup(value);
-}
-else
-{
-node->next = ht->array[index];
+    if (strcmp(node->key, key) == 0)
+    {
+        free(node->value);
+        node->value = strdup(value);
+        return (1);
+    }
+    node = node->next;
 }
 ht->array[index] = node;
 
