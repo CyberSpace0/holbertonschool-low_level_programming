@@ -30,7 +30,7 @@ return (0);
 
 node->next = ht->array[index];
 
-index = key_index(key, ht->size);
+index = key_index((const unsigned char )key, ht->size);
 ht->array[index] = node;
 
 return (1);
