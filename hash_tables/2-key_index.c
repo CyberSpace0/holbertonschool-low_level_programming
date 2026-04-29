@@ -12,5 +12,6 @@
 */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-return (key % size);
+const unsigned char index = key % size;
+return (index);
 }
