@@ -5,10 +5,9 @@
 
 
 /**
-* hash_table_set - entry point
+* hash_table_get - entry point
 * @ht: string to generate the real key for dictionary
 * @key: size of array
-* @value: the value
 * Return: always (0) success
 */
 char *hash_table_get(const hash_table_t *ht, const char *key)
