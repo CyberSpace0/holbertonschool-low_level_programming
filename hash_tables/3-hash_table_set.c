@@ -14,19 +14,24 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 long int index;
-hash_node_t *node = malloc(sizeof(hash_node_t *));
+hash_node_t *node = malloc(sizeof(hash_node_t));
 if (node == NULL)
 {
 return (0);
 }
+
 node->key = strdup(key);
 node->value = strdup(value);
-node->next = NULL;
 
-index = hash_djb2(key) % 10;
-ht->size = 10;
+if (node->key == NULL || node->value == NULL)
+{
+return (0);
+}
+
+node->next = ht->array[index];
+
+index = key_index(key, ht->size);
 ht->array[index] = node;
-
 
 return (1);
 }
