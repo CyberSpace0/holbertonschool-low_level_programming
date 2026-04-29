@@ -15,7 +15,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 unsigned long int index;
 
-index = key % ht->size;
+index = (unsigned long int)key % ht->size;
 
 return (ht->array[index]->value);
 }
