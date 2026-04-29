@@ -33,6 +33,7 @@ index = key_index((const unsigned char *)key, ht->size);
 if (ht->array[index] != NULL && strcmp(ht->array[index]->key, key) == 0)
 {
 ht->array[index]->value = strdup(value);
+ht->array[index]->next = node;
 }
 else
 {
