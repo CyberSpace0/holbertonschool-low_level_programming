@@ -22,25 +22,23 @@ return (0);
 
 node->key = strdup(key);
 node->value = strdup(value);
+node->next = NULL;
+
 
 if (node->key == NULL || node->value == NULL)
 {
 return (0);
 }
 index = key_index((const unsigned char *)key, ht->size);
-
-node = ht->array[index];
-while (node)
+if (strcmp(ht->array[index]->key, key) == 0)
 {
-    if (strcmp(node->key, key) == 0)
-    {
-        free(node->value);
-        node->value = strdup(value);
-        return (1);
-    }
-    node = node->next;
+ht->array[index]->value = value;
 }
+else
+{
 ht->array[index] = node;
+}
+
 
 return (1);
 }
