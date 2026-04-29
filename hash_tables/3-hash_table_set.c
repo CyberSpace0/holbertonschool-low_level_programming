@@ -25,7 +25,7 @@ node->value = strdup(value);
 node->next = NULL;
 
 
-if (node->key == NULL || node->value == NULL)
+if (node->key == NULL || node->value == NULL || ht == NULL)
 {
 return (0);
 }
