@@ -27,7 +27,7 @@ if (node->key == NULL || node->value == NULL)
 {
 return (0);
 }
-index = key_index((const unsigned char )key, ht->size);
+index = key_index((const unsigned char *)key, ht->size);
 
 node->next = ht->array[index];
 ht->array[index] = node;
