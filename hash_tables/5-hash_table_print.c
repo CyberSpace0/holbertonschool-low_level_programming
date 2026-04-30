@@ -18,7 +18,7 @@ for (i = 0; i < ht->size; i++)
 {
 if (ht->array[i] != NULL)
 {
-printf("'%s': '%s'", ht->array[i]->key,ht->array[i]->value);
+printf("'%s': '%s', ", ht->array[i]->key,ht->array[i]->value);
 }
 }
 printf("}");
