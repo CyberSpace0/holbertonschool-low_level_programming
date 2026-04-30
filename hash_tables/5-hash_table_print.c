@@ -13,7 +13,7 @@
 void hash_table_print(const hash_table_t *ht)
 {
 long unsigned int i;
-int f = 1;
+int first = 1;
 printf("{");
 if (ht != NULL)
 {
@@ -21,7 +21,7 @@ for (i = 0; i < ht->size; i++)
 {
 if (ht->array[i] != NULL)
 {
-if (!f)
+if (!first)
 {
 printf(", ");
 }
