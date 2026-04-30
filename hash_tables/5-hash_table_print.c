@@ -14,15 +14,22 @@ void hash_table_print(const hash_table_t *ht)
 {
 long unsigned int i;
 printf("{");
+if (ht == NULL)
+{
+continue;
+}
+else
+{
 for (i = 0; i < ht->size; i++)
 {
 if (ht->array[i] != NULL)
 {
 if (ht->array[i + 1] == NULL)
 {
-printf("'%s': '%s'", ht->array[i]->key,ht->array[i]->value);
+printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
 }
-printf("'%s': '%s', ", ht->array[i]->key,ht->array[i]->value);
+printf("'%s': '%s', ", ht->array[i]->key, ht->array[i]->value);
+}
 }
 }
 printf("}");
