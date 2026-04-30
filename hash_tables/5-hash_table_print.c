@@ -30,5 +30,5 @@ first = 0;
 }
 }
 }
-printf("}");
+printf("}\n");
 }
