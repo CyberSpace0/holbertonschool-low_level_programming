@@ -13,13 +13,13 @@
 void hash_table_print(const hash_table_t *ht)
 {
 long unsigned int i;
+printf("{");
 for (i = 0; i < ht->size; i++)
 {
-if (ht->array[i]->key != NULL)
+if (ht->array[i] != NULL)
 {
 printf("'%s': '%s'", ht->array[i]->key,ht->array[i]->value);
 }
-printf("--");
 }
-
+printf("}");
 }
