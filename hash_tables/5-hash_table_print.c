@@ -5,15 +5,14 @@
 
 
 /**
-* hash_table_get - entry point
+* hash_table_print - entry point
 * @ht: string to generate the real key for dictionary
-* @key: size of array
 * Return: always (0) success
 */
 void hash_table_print(const hash_table_t *ht)
 {
 hash_node_t *node;
-long unsigned int i = 0;
+unsigned long int i = 0;
 int first = 1;
 if (ht != NULL)
 {
