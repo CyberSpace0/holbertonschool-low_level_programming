@@ -26,6 +26,7 @@ if (!f)
 printf(", ");
 }
 printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
+first = 0;
 }
 }
 }
