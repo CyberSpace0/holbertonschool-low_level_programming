@@ -31,7 +31,7 @@ printf("'%s': '%s'", node->key, node->value);
 while (node->next != NULL)
 {
 node = node->next;
-printf("'%s': '%s'", node->key, node->value);
+printf(", '%s': '%s'", node->key, node->value);
 
 }
 first = 0;
