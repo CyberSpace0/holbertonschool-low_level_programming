@@ -16,7 +16,7 @@ unsigned long int i = 0;
 
 for (i = 0; i < ht->size; i++)
 {
-if (strlen(ht->array[i]->key) > 0)
+if (ht->array[i] != NULL)
 {
 node = ht->array[i];
 free(node->key);
