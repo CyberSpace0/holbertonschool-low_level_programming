@@ -17,9 +17,9 @@ unsigned long int i = 0;
 for (i = 0; i < ht->size; i++)
 {
 node = ht->array[i];
-free(node[i]->key);
-free(node[i]->value);
-free(node[i]);
+free(node->key);
+free(node->value);
+free(node);
 }
 free(ht);
 }
