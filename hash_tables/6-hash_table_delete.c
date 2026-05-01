@@ -21,5 +21,5 @@ free(node[i]->key);
 free(node[i]->value);
 free(node[i]);
 }
-free(node);
+free(ht);
 }
