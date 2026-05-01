@@ -31,5 +31,6 @@ free(node);
 
 }
 }
+free(ht->array);
 free(ht);
 }
