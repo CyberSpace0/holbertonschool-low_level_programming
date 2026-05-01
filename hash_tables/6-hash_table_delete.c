@@ -19,7 +19,14 @@ for (i = 0; i < ht->size; i++)
 node = ht->array[i];
 free(node->key);
 free(node->value);
+if (node->next != NULL)
+{
+node = node->next;
+free(node->key);
+free(node->value);
+}
 free(node);
+
 }
 free(ht);
 }
