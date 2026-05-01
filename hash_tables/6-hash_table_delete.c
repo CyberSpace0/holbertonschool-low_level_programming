@@ -21,13 +21,16 @@ if (ht->array[i] != NULL)
 node = ht->array[i];
 free(node->key);
 free(node->value);
+while (node->next != NULL)
+{
 if (node->next != NULL)
 {
 node = node->next;
 free(node->key);
 free(node->value);
-}
 free(node);
+}
+}
 
 }
 }
