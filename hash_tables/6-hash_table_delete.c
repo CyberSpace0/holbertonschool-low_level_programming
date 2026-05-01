@@ -16,24 +16,17 @@ unsigned long int i = 0;
 
 for (i = 0; i < ht->size; i++)
 {
-if (ht->array[i] != NULL)
-{
 node = ht->array[i];
-free(node->key);
-free(node->value);
-while (node->next != NULL)
+while (node != NULL)
 {
-if (node->next != NULL)
-{
-node = node->next;
+hash_node_t *tmp = node->next;
 free(node->key);
 free(node->value);
 free(node);
+node = tmp;
 }
 }
 
-}
-}
 free(ht->array);
 free(ht);
 }
